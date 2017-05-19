@@ -22,7 +22,7 @@ IB_DESIGNABLE
 /**
  设置或获取采集标记
  **/
-@property(nonatomic, copy)IBInspectable NSMutableString *collectSign;
+@property(nonatomic, copy)IBInspectable NSString *collectSign;
 
 /**
  设置或获取UIView名称

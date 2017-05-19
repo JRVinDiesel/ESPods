@@ -30,7 +30,7 @@
  @param encoding  字符编码
  @return 格式化后的SQL
  **/
-+(NSString* _Nullable) formatWithSql:(NSString* _Nullable)sql params:(DataCollection* _Nullable)dataParams esencoding:(ESEncoding)encoding;
++(NSString*) formatWithSql:(NSString*)sql params:(DataCollection*)dataParams esencoding:(ESEncoding)encoding;
 
 /**
  从指定目录读取sql文件，并返回sql内容

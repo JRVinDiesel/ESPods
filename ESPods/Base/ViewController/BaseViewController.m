@@ -363,7 +363,7 @@
  获取设备类型
  **/
 -(DeviceName)deviceName{
-    //NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
+    NSString* phoneVersion = [[UIDevice currentDevice] systemVersion];
     struct utsname systemInfo;
     
     uname(&systemInfo);

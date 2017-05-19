@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ESPods"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "A ESPods to use ourself"
 
   s.homepage     = "https://github.com/JRVinDiesel/ESPods"
@@ -29,13 +29,13 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "ESPods/**/*.h"
+  s.source_files  = "ESPods/**/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
+  s.frameworks = "Foundation", "UIKit"
+  s.library   = "sqlite3"
 
   s.requires_arc = true
 

@@ -26,7 +26,7 @@
 /**
   设置或获取当前ViewController的搜索框
  **/
-@property (strong,nonatomic) UITextField * _Nullable seacherFild;
+@property (strong,nonatomic) UITextField *seacherFild;
 
 /**
  初始化视图控制器
@@ -52,7 +52,7 @@
 /**
  获取NavigationBar颜色
  **/
-+(UIColor* _Nullable)getNavigationBar_barTintColor;
++(UIColor*)getNavigationBar_barTintColor;
 
 /**
  推入视图控制器
@@ -77,7 +77,7 @@
  @param closed 通知父页面是否关闭
  @param flag 是否动画方式展示
  ***/
-- (void) popViewControllerAnimated:(DataCollection* _Nullable)params isClosed:(BOOL)closed animated:(BOOL)flag;
+- (void) popViewControllerAnimated:(DataCollection*)params isClosed:(BOOL)closed animated:(BOOL)flag;
 
 /**
  推入视图控制器
@@ -97,7 +97,7 @@
  创建右侧按钮,并添加到导航视图控制器
  @param text 按钮文本
  ***/
-- (UIBarButtonItem* _Nullable) rightBarButtonItem:(UIViewController* _Nullable)viewController text:(NSString*_Nullable)text;
+- (UIBarButtonItem*) rightBarButtonItem:(UIViewController*)viewController text:(NSString*)text;
 
 /**
  创建右侧图形按钮,并添加到导航视图控制器
@@ -119,18 +119,18 @@
  为当前的topbar添加搜索框
  @param placeholderStr 提示文字
  **/
--(void)addSeacherView:(NSString* _Nullable) placeholderStr;
+-(void)addSeacherView:(NSString*) placeholderStr;
 
 /**
  设置透明的topbar
  @param viewController 当前视图控制器
  @param textColor 标题文本颜色
  **/
--(void)setTransparentStyleBarWithViewController:(BaseViewController*)viewController titleTextColor:(UIColor* _Nullable)textColor;
+-(void)setTransparentStyleBarWithViewController:(BaseViewController*)viewController titleTextColor:(UIColor*)textColor;
 
 /**
  恢复topbar的普通状态
  @param viewController 当前视图控制器
  **/
--(void)resumeNormalStyleBarWithViewController:(BaseViewController* _Nullable)viewController;
+-(void)resumeNormalStyleBarWithViewController:(BaseViewController*)viewController;
 @end

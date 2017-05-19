@@ -80,6 +80,7 @@
  执行sql语句并返回结果集
  @param sql 执行的语句
  @param dataParams 参数集
+ @param encoding  字符编码
  @return DataTable数据集
  **/
 -(nonnull DataTable*) executeTable:(nonnull NSString*)sql params:(nullable DataCollection*)dataParams;

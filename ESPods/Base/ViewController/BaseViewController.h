@@ -69,8 +69,8 @@ IB_DESIGNABLE
     UIScreenEdgePanGestureRecognizer *_ges;
 }
 
-@property(strong,nonatomic) UIScreenEdgePanGestureRecognizer * _Nullable ges;
-@property(strong,nonatomic) UIPercentDrivenInteractiveTransition * _Nullable interactiveTransition;
+@property(strong,nonatomic)UIScreenEdgePanGestureRecognizer *ges;
+@property(strong,nonatomic) UIPercentDrivenInteractiveTransition *interactiveTransition;
 /**
  设置或获取视图控制器接收的参数集
  **/
@@ -129,9 +129,9 @@ IB_DESIGNABLE
 /**
  设置或获取视图控制器指向的根视图控制器
  **/
-@property (strong, nonatomic) BaseViewController * _Nullable rootViewController;
+@property (strong, nonatomic) BaseViewController *rootViewController;
 
-@property (strong,nonatomic) UIView * _Nullable noDataGroupView;
+@property (strong,nonatomic) UIView *noDataGroupView;
 
 /**
  初始化视图
@@ -176,7 +176,7 @@ IB_DESIGNABLE
  发布数据到当前ViewController
  @params table 数据集
  **/
--(void)release:(DataTable* _Nullable)table;
+-(void)release:(DataTable*)table;
 
 /**
  添加关闭键盘输入事件监听
@@ -241,5 +241,5 @@ IB_DESIGNABLE
 /**
 无数据无网络时，重新加载的按钮点击事件，需要子类中重写此方法
  **/
--(void) btnReloadDataOnClick:(UIButton* _Nullable) btn;
+-(void) btnReloadDataOnClick:(UIButton*) btn;
 @end

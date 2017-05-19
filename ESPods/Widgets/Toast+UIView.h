@@ -134,6 +134,7 @@ extern const NSString * CSToastPositionBottom;
  
  @param position The toast's center point. Can be one of the predefined CSToastPosition
  constants or a `CGPoint` wrapped in an `NSValue` object.
+ @return The newly created toast view
  */
 - (void)makeToastActivity:(id)position;
 
@@ -312,7 +313,9 @@ extern const NSString * CSToastPositionBottom;
  a `makeToast:` method (or `toastViewForMessage:title:image:style:`) is called
  with with a nil style. By default, this is set to `CSToastStyle`'s default
  style.
-  */
+ 
+ @param sharedStyle
+ */
 + (void)setSharedStyle:(CSToastStyle *)sharedStyle;
 
 /**
@@ -326,6 +329,7 @@ extern const NSString * CSToastPositionBottom;
 /**
  Enables or disables tap to dismiss on toast views. Default is `YES`.
  
+ @param tapToDismissEnabled
  */
 + (void)setTapToDismissEnabled:(BOOL)tapToDismissEnabled;
 
@@ -344,6 +348,7 @@ extern const NSString * CSToastPositionBottom;
  on their positions). This has no affect on the toast activity view,
  which operates independently of normal toast views. Default is `YES`.
  
+ @param queueEnabled
  */
 + (void)setQueueEnabled:(BOOL)queueEnabled;
 
